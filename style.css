@@ -240,7 +240,7 @@ nav img{
 }
 h1{
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 600;
 }
 p{
     color: #131212;
@@ -253,8 +253,10 @@ p{
     margin: auto;
     text-align: left;
     padding-top: 100px;
-    max-width: 800px;
     justify-content: space-between;
+    background-image:linear-gradient(rgba(242, 242, 250, 0.5),rgba(241, 241, 241, 0.7)), url(assets/visi.jpg);
+    background-size: cover;
+    max-width: 1500px;
 }
 .misi{
     margin: auto;

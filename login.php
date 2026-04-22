@@ -21,10 +21,10 @@
             <h5>Welcome to Green Community Engagement!</h5>
             <form action="index.php" method="post">
                 <label for="email">Email: </label> <br>
-                <input type="email" id="email" name="email" placeholder="Enter your email"> <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
 
                 <label for="pw">Password: </label> <br>
-                <input type="password" id="pw" name="pw" placeholder="Enter your password"> <br>
+                <input type="password" id="pw" name="pw" placeholder="Enter your password" required> <br>
 
                 <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label>
 
