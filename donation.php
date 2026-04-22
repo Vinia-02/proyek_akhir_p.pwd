@@ -18,8 +18,6 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="projects.php">Projects</a></li>
                     <li><a href="donation.php">Donation</a></li>
-                    <span class="divider">|</span>
-                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
         </div>

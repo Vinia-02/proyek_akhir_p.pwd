@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <section class="semua">
-        <div class="layar">
+<body class="semua">
+    <section class="layar">
         <div class="konten">
-            <h1>THE NECROMANCER'S BANE</h1>
-            <p>DUNIA ELDARION, YANG DULU DIPENUHI KEHIDUPAN DAN CAHAYA, KINI TERJERAT DALAM KEGELAPAN. LANGIT YANG PERNAH BIRU KINI <br>
-               ABU-ABU KELAM, DISELIMUTI KABUT TEBAL YANG MEMBAWA AROMA KEMATIAN. HUTAN-HUTAN HIJAU BERUBAH MENJADI TANAH TANDUS, DIHUNI OLEH<br>
-               MAKHLUK-MAKHLUK TAK BERNYAWA YANG BERGERAK DENGAN GERAKAN KAKU DAN MATA KOSONG. KOTA-KOTA MEGAH YANG RAMAI DENGAN TAWA<br>
-               KINI HANYA MENYISAKAN PUING PUING DAN KEHENINGAN MENCEKAM. SEMUA INI ADALAH ULAH MALTHERION, NECROMANCER KEGELAPAN, YANG<br>
-               MEMBANGKITKAN PASUKAN MAYAT HIDUP UNTUK MENEBAR TEROR. NAMUN, DI TENGAH KEPUTUSASAAN, SEBUAH HARAPAN MUNCUL: SEORANG <br>
-               PAHLAWAN YANG TAK MENYADARI TAKDIRNYA, MEMUTUSKAN UNTUK MENDAFTAR DI AKADEMI ARANTHOR, TEMPAT PARA KESATRIA DAN PENYIHIR <br>
-               TERBAIK DILATIH UNTUK MELAWAN ANCAMAN YANG MENGANCAM ELDARION. DI SANA, IA AKAN MENEMUKAN JAWABAN TENTANG KEKUATAN YANG <br>
-               TERSEMBUNYI DALAM DIRINYA DAN MEMULAI PERJALANAN YANG AKAN MENENTUKAN NASIB DUNIA. </p>
+            <h1>GREEN COMMUNITY ENGAGEMENT</h1>
+            <p>Green Community Engagement hadir sebagai wadah digital untuk memperkuat sinergi gerakan lingkungan.<br>
+               Platform ini menyajikan data valid mengenai kondisi ekosistem dan progres aksi hijau secara transparan.<br> 
+               Anda dapat melihat pencapaian kolektif komunitas dalam menjaga kelestarian alam melalui informasi yang selalu diperbarui.</p>
         </div>
         <div class="kirim">
-                <a href="login.php">MEMULAI PERJALANAN</a>
+                <a href="login.php">LOGIN</a>
         </div>
         </div>
     </section>

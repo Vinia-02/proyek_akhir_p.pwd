@@ -25,29 +25,30 @@ html, body {
     margin: 100px auto;
     padding: 20px;
     flex-direction: column;
-    border: 1px solid rgba(199, 185, 55, 0.5);
+    border: 1px solid rgba(55, 199, 67, 0.5);
     margin-bottom: 15px;
 }
 .konten h1{
-    color: bisque;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 .konten p{
-    color: bisque;
+    color: white;
     padding: 20px;
-    font-size: 12px;
+    font-size: 25px;
     text-align: center;
-    line-height: 25px;
+    line-height: 30px;
 }
 .kirim a{
     text-decoration: none;
     color: white;
-    background-color: rgba(199, 185, 55, 0.5);
+    background-color: rgba(55, 199, 67, 0.5);
     border-radius: 20px;
     padding: 15px;
 }
 
+/* index */
 .header{
     min-height: 100vh;
     width: 100%;
@@ -225,8 +226,6 @@ nav img{
         padding: 3px 15px;
     }
 }
-
-
 
 /* ---about us--- */
 .about{
