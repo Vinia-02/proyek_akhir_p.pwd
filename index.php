@@ -22,7 +22,7 @@
             <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="index.php">About Us</a></li>
                     <li><a href="projects.php">Projects</a></li>
                     <li><a href="donation.php">Donation</a></li>
                     <span class="divider">|</span>
