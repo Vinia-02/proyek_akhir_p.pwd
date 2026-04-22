@@ -9,6 +9,45 @@ html{
 html, body {
     overflow-y: scroll;
 }
+/* heropage */
+.semua{
+    width: 100%;
+    background-image: url(assets/hd.jpg);
+    background-size: cover;
+}
+.layar{
+    background-color: rgba(31, 28, 28, 0.658);
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    border-radius: 20px;
+    align-items: center;
+    margin: 100px auto;
+    padding: 20px;
+    flex-direction: column;
+    border: 1px solid rgba(199, 185, 55, 0.5);
+    margin-bottom: 15px;
+}
+.konten h1{
+    color: bisque;
+    padding: 20px;
+    text-align: center;
+}
+.konten p{
+    color: bisque;
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 25px;
+}
+.kirim a{
+    text-decoration: none;
+    color: white;
+    background-color: rgba(199, 185, 55, 0.5);
+    border-radius: 20px;
+    padding: 15px;
+}
+
 .header{
     min-height: 100vh;
     width: 100%;

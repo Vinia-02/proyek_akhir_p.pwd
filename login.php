@@ -9,22 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body class="akun">
-    <nav class="navbar">
-            <div class="navbar-container">
-            <a href="index.php" class="navdiv"> 
-            <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="index.php">About Us</a></li>
-                    <li><a href="projects.php">Projects</a></li>
-                    <li><a href="donation.php">Donation</a></li>
-                    <span class="divider">|</span>
-                    <li><a href="login.php">Login</a></li>
-                </ul>
-            </div>
-        </div>
-        </nav>
-
         <div class="masuk">
             <img src="assets/logo2.png" alt="logo">
         <h5>Welcome to Green Community Engagement!</h5>
@@ -36,7 +20,6 @@
             <input type="password" id="pw" name="pw" placeholder="Enter your password"> <br><br>
 
             <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label> <br>
-            <label for="fp"><input type="checkbox" name="fp" value="fp">Forgot Password</label> <br>
 
             <button class="register">Login</button>
         </form>
