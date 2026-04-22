@@ -10,14 +10,15 @@
 </head>
 <body class="semua">
     <section class="layar">
+            <img src="assets/Logo1.png" alt="logo">
         <div class="konten">
-            <h1>GREEN COMMUNITY ENGAGEMENT</h1>
-            <p>Green Community Engagement hadir sebagai wadah digital untuk memperkuat sinergi gerakan lingkungan.<br>
-               Platform ini menyajikan data valid mengenai kondisi ekosistem dan progres aksi hijau secara transparan.<br> 
-               Anda dapat melihat pencapaian kolektif komunitas dalam menjaga kelestarian alam melalui informasi yang selalu diperbarui.</p>
+            <h1>GREEN COMMUNITY ENGAGEMENT</h1> <br>
+            <p>Green Community Engagement serves as a digital hub to strengthen environmental movement synergy.
+                This platform provides valid data on ecosystem conditions and green action progress transparently.
+                You can view the collective achievements of the community in preserving nature through constantly updated information.</p>
         </div>
         <div class="kirim">
-                <a href="login.php">LOGIN</a>
+                <a href="login.php">START</a>
         </div>
         </div>
     </section>

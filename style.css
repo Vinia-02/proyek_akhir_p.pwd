@@ -12,8 +12,12 @@ html, body {
 /* heropage */
 .semua{
     width: 100%;
-    background-image: url(assets/hd.jpg);
+    background-image: url(assets/bghero.jpg);
     background-size: cover;
+}
+.layar img{
+    width: 100px;
+    height: 100px;
 }
 .layar{
     background-color: rgba(31, 28, 28, 0.658);
@@ -30,24 +34,23 @@ html, body {
 }
 .konten h1{
     color: white;
-    padding: 20px;
     text-align: center;
+    line-height: 25px;
 }
 .konten p{
     color: white;
     padding: 20px;
-    font-size: 25px;
+    font-size: 16px;
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
 }
 .kirim a{
     text-decoration: none;
     color: white;
     background-color: rgba(55, 199, 67, 0.5);
     border-radius: 20px;
-    padding: 15px;
+    padding: 13px;
 }
-
 /* index */
 .header{
     min-height: 100vh;
@@ -342,63 +345,88 @@ p{
 }
 
 /* login session */
+.akun{
+    background-color: white;
+}
+.kiri{
+    display: flex;
+    height: 100vh;
+}
+.gambar{
+    width: 50%;
+}
+.gambar img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: blur(1px);
+}
+.kanan{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .masuk{
     text-align: center;
     padding: 10px;
-    margin-top: 8px;
     background-color: rgba(255, 255, 255, 0.938);
     max-width: 500px;
-    margin: 100px auto;
+    margin: auto;
     border-radius: 15px;
-    flex-direction: column;
-    max-height: 550px;
-}
-.masuk h5{
-    font-family: serif;
-    margin-bottom: 15px;
-}
-.masuk label{
-    font-family: serif;
-    font-size: 17px;
-    line-height: 8px;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-.masuk button{
-    margin-top: 10px;
-    padding: 10px;
-    justify-content: center;
-    border-radius: 15px;
-    font-family: serif;
-    background-color: rgb(226, 241, 225);
-    color: black;
-    border: 1px solid rgb(135, 167, 89);
-    margin-bottom: 10px;
-}
-.masuk input{
-    margin-top: 10px;
-    border-radius: 5px;
-    width: 75%;
-    padding: 8px;
-    border: 1px solid rgba(83, 78, 78, 0.699);
-    box-sizing: border-box;
+    max-height: 600px;
 }
 .masuk img{
     width: 200px;
     height: 200px;
 }
-.akun{
+.masuk form {
+    width: 95%;
+    margin: 0 auto; 
+    text-align: left;
+}
+.masuk h5{
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.masuk label{
+    font-size: 15px;
+    line-height: 8px;
+    margin-bottom: 10px;
+}
+.masuk input{
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid rgba(83, 78, 78, 0.699);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.masuk input[type="email"],
+.masuk input[type="password"]{
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/hd.jpg);
-    background-size: cover;
 }
 .masuk input[type="checkbox"]
 {
-    text-align:  left;
+    text-align: left;
 }
-.masuk label .checkbox{
-    display: inline-block;
-    margin-left: 8px;
-    line-height: 20px;
-    margin-bottom: 10px;
+.masuk label[for="rm"] {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.masuk button{
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(32, 212, 107);
+    color: white;
+    border: 1px solid rgb(245, 248, 245);
 }

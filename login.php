@@ -10,20 +10,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 <body class="akun">
-        <div class="masuk">
-            <img src="assets/logo2.png" alt="logo">
-        <h5>Welcome to Green Community Engagement!</h5>
-        <form action="index.php" method="post">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email"> <br><br>
-
-            <label for="pw">Password</label>
-            <input type="password" id="pw" name="pw" placeholder="Enter your password"> <br><br>
-
-            <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label> <br>
-
-            <button class="register">Login</button>
-        </form>
+<div class="kiri">
+        <div class="gambar">
+            <img src="assets/l.jpg" alt="login">
         </div>
+
+    <div class="kanan">
+        <div class="masuk">
+                <img src="assets/logo2.png" alt="logo">
+            <h5>Welcome to Green Community Engagement!</h5>
+            <form action="index.php" method="post">
+                <label for="email">Email: </label> <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"> <br>
+
+                <label for="pw">Password: </label> <br>
+                <input type="password" id="pw" name="pw" placeholder="Enter your password"> <br>
+
+                <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label>
+
+                <button>Login</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
