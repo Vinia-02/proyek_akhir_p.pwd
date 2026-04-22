@@ -9,18 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="donatepage">
-    <nav class="navbar">
+   <nav class="navbar">
         <div class="navbar-container">
-        <a href="index.html" class="navdiv"> 
-        <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
-        <div class="nav-links">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#donation">Donation</a></li>
-            </ul>
-        </div>
+            <a href="index.php" class="navdiv"> 
+            <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="projects.php">Projects</a></li>
+                    <li><a href="donation.php">Donation</a></li>
+                    <span class="divider">|</span>
+                    <li><a href="login.php">Login</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <section class="donate">
