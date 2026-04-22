@@ -38,14 +38,18 @@
     </section>
     
     <section id="about" class="about">
+        <div class="nan">
+            <img src="assets/abt.jpg" alt="about">
+        </div>
         <h1>About Us</h1>
-        <p>We are a community-based organization dedicated to protecting and restoring the environment. Our focus is on taking real action cleaning polluted areas, reducing waste, and raising awareness about environmental issues.
-            Founded by Meira and Selvinia, this movement was created to bring people together who share the same passion for a cleaner, healthier, and greener world. We believe that even small actions, when done together, can create meaningful change for our planet.</p>
+        <p>We are a community-based organization dedicated to protecting and restoring the environment. Our focus is on taking real action—cleaning polluted areas, reducing waste, and raising awareness about environmental issues.
+           Green Community Engagement provides a platform where users can actively participate in environmental efforts. Members can choose specific locations that need cleaning and contribute directly to improving those areas. In addition, we offer an option to donate funds, which are used to support environmental clean-up activities and sustainability programs.
+           Founded by Meira and Selvinia, this movement was created to bring people together who share the same passion for a cleaner, healthier, and greener world. We believe that even small actions, when done together, can create meaningful change for our planet.</p>
     </section>
     
     <section class="visi">
         <h1>Our Vision</h1>
-        <p>To create a sustainable and clean environment where communities live in harmony with nature.</p>
+        <p>To create a sustainable <br> and clean environment <br> where communities live in <br>harmony with nature. <br><br><br><br><br><br><br></p>
     </section>
 
     <section class="misi">
