@@ -36,6 +36,7 @@
             <input type="password" id="pw" name="pw" placeholder="Enter your password"> <br><br>
 
             <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label> <br>
+            <label for="fp"><input type="checkbox" name="fp" value="fp">Forgot Password</label> <br>
 
             <button class="register">Login</button>
         </form>
