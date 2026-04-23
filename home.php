@@ -38,28 +38,39 @@
         <a href="form.php" class="hero-btn">JOIN US</a>
     </div>
     </section>
-    
+
+    <div class="all">
     <section id="about" class="about">
         <div class="nan">
             <img src="assets/abt.jpg" alt="about">
         </div>
-        <h1>About Us</h1>
-        <p>We are a community-based organization dedicated to protecting and restoring the environment. Our focus is on taking real action—cleaning polluted areas, reducing waste, and raising awareness about environmental issues.
-           Green Community Engagement provides a platform where users can actively participate in environmental efforts. Members can choose specific locations that need cleaning and contribute directly to improving those areas. In addition, we offer an option to donate funds, which are used to support environmental clean-up activities and sustainability programs.
-           Founded by Meira and Selvinia, this movement was created to bring people together who share the same passion for a cleaner, healthier, and greener world. We believe that even small actions, when done together, can create meaningful change for our planet.</p>
+        <div class="at">
+        <h1>About Us</h1><br>
+        <p>We are a community-based organization dedicated to protecting and restoring the environment. Our focus is on taking real action cleaning polluted areas, reducing waste, and raising awareness about environmental issues. 
+        Green Community Engagement provides a platform where users can actively participate in environmental efforts. Members can choose specific locations that need cleaning and contribute directly to improving those areas. In addition, we offer an option to donate funds, which are used to support environmental clean-up activities and sustainability programs. 
+        Founded by Meira and Selvinia, this movement was created to bring people together who share the same passion for a cleaner, healthier, and greener world. We believe that even small actions, when done together, can create meaningful change for our planet. 
+        Through continuous collaboration and community involvement, we aim to build a culture of environmental responsibility and long-term sustainability. We also strive to educate and inspire individuals to adopt eco-friendly habits in their daily lives, ensuring that our collective efforts contribute to a better future for generations to come.</p>
+        </div>
     </section>
     
     <section class="visi">
-        <h1>Our Vision</h1>
-        <p>To create a sustainable <br> and clean environment <br> where communities live in <br>harmony with nature. <br><br><br><br><br><br><br></p>
+        <br><br><br><br><br><h1>Our Vision</h1><br>
+        <p>To create a sustainable and clean environment where communities live in harmony with nature.
+           We strive to promote environmental awareness and encourage responsible behaviors in managing natural resources.
+           Our vision includes fostering innovation and collaboration to support eco-friendly solutions and green development.
+           We are committed to preserving ecosystems while improving the quality of life for present and future generations.
+           Through collective action and continuous education, we aim to build a resilient, healthy, and environmentally conscious society.<br><br><br><br><br><br><br><br></p>
     </section>
 
     <section class="misi">
+        <div class="ms">
         <h1>Our Mission</h1>
         <p>1. To organize and participate in environmental clean-up activities <br>
            2. To raise awareness about the importance of protecting nature <br>
            3. To encourage people to adopt eco-friendly lifestyles <br>
            4. To build a strong community that cares for and preserves the environment</p>
+        </div>
     </section>
+    </div>
 </body>
 </html>
