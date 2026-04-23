@@ -4,6 +4,9 @@ session_start();
 $errors = [
     'login' => $_SESSION['login_error'] ?? '',
 ];
+
+$remembered_email = $_COOKIE['remember_email'] ?? '';
+
 session_unset();
 
 function showerror($error){
@@ -35,7 +38,7 @@ function showerror($error){
             <form action="config/session.php" method="post">
                 <?= showerror($errors['login']); ?>
                 <label for="email">Email: </label> <br>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" value="<?= htmlspecialchars($remembered_email) ?>" required> <br>
 
                 <label for="pw">Password: </label> <br>
                 <input type="password" id="pw" name="pw" placeholder="Enter your password" required> <br>
