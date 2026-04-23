@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+    <a href="home.php" class="navdiv"> 
+    <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
+      <div class="nav-links">
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="projects.php">Projects</a></li>
+            <li><a href="donation.php">Donation</a></li>
+            <span class="divider">|</span>
+            <li><a href="login.php">Logout</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
     <div class="card-group">
   <div class="card">
     <img src="assets/ketiga.jpg" class="card-img-top" alt="...">

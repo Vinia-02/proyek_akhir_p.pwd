@@ -11,7 +11,7 @@
 <body class="donatepage">
    <nav class="navbar">
         <div class="navbar-container">
-            <a href="index.php" class="navdiv"> 
+            <a href="home.php" class="navdiv"> 
             <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
             <div class="nav-links">
                 <ul>
