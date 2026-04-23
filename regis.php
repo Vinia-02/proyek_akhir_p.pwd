@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+$errors = [
+    'register' => $_SESSION['register_error'] ?? ''
+];
+session_unset();
+
+function showerror($error){
+    return !empty($error) ? "<p class='error-msg'>$error</p>" : '';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,9 +29,10 @@
 
     <div class="right">
         <div class="go">
-                <img src="assets/logo2.png" alt="logo">
+            <img src="assets/logo2.png" alt="logo">
             <h5>Welcome to Green Community Engagement!</h5>
-            <form action="login.php" method="POST">
+            <form action="config/session.php" method="POST">
+                <?= showerror($errors['register']); ?>
                 <label for="usn">Username: </label> <br>
                 <input type="text" id="usn" name="usn" placeholder="Enter your username" required> <br>
 
@@ -28,7 +42,7 @@
                 <label for="pw">Password: </label> <br>
                 <input type="password" id="pw" name="pw" placeholder="Enter your password" required> <br>
 
-                <button>Register</button>
+                <button type="submit" name="register">Register</button>
                 <h6>Already have an account? <a href="login.php">Login</a></h6>
             </form>
         </div>

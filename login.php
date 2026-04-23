@@ -1,9 +1,22 @@
+<?php
+session_start();
+
+$errors = [
+    'login' => $_SESSION['login_error'] ?? '',
+];
+session_unset();
+
+function showerror($error){
+    return !empty($error) ? "<p class='error-msg'>$error</p>" : '';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page | Green Community Engagement</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
@@ -19,7 +32,8 @@
         <div class="masuk">
                 <img src="assets/logo2.png" alt="logo">
             <h5>Welcome to Green Community Engagement!</h5>
-            <form action="home.php" method="post">
+            <form action="config/session.php" method="post">
+                <?= showerror($errors['login']); ?>
                 <label for="email">Email: </label> <br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
 
@@ -28,7 +42,7 @@
 
                 <label for="rm"><input type="checkbox" name="rm" value="rm">Remember me</label>
 
-                <button>Login</button>
+                <button type="submit" name="login">Login</button>
                 <h6>Don't have an account? <a href="regis.php">Register here</a></h6>
             </form>
         </div>

@@ -4,10 +4,10 @@ $user = "root";
 $password = "";
 $database = "green_community";
 
-$connection = new mysqli($host, $user, $password, $database);
+$koneksi = new mysqli($host, $user, $password, $database);
 
-if ($connection->connect_error){
-    die("Koneksi database gagal: " . $connection->connect_error);
+if ($koneksi->connect_error){
+    die("Koneksi database gagal: " . $koneksi->connect_error);
 }
 
 ?>
