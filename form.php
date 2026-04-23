@@ -1,3 +1,35 @@
+<?php
+require_once 'config/session.php';
+require_once 'includes/kontributor_functions.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $nama_kontributor = $_POST['nama'] ?? '';
+    $tgl_lahir = $_POST['tgl'] ?? '';
+    $email_kontributor = $_POST['email'] ?? '';
+    $telp_kontributor = $_POST['telp'] ?? '';
+    $lokasi = $_POST['lokasi'] ?? '';
+
+    if ($nama_kontributor && $tgl_lahir && $email_kontributor && $telp_kontributor && $lokasi != 'pilih'){
+        if (create_kontributor($nama_kontributor, $tgl_lahir, $email_kontributor, $telp_kontributor, $lokasi)){
+            $_SESSION['kontributor_data'] = [
+                'nama' => $nama_kontributor,
+                'tgl_lahir' => $tgl_lahir,
+                'email' => $email_kontributor,
+                'telp' => $telp_kontributor,
+                'lokasi' => $lokasi
+            ];
+            $_SESSION['success'] = "Selamat! Anda telah bergabung dengan komunitas kami!";
+            header("Location: konfirm.php");
+            exit();
+        } else {
+            $_SESSION['error'] = "Email sudah terdaftar!";
+        }
+    } else {
+        $_SESSION['error'] = "Semua field harus diisi!";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +60,14 @@
 
     <div class="ls">
         <h2>Join Our Community</h2>
+        <?php if (!empty($_SESSION['error'])): ?>
+            <p class="error-msg"><?php echo $_SESSION['error']; ?></p>
+            <?php unset($_SESSION['error']); ?>
+        <?php endif; ?>
 
-        <form action="konfirm.php" method="post">
-            <label for="usn">Nama Lengkap</label>
-            <input type="text" id="usn" name="usn" placeholder="Enter your username"> <br><br>
+        <form action="form.php" method="post">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="usn" name="nama" placeholder="Enter your username"> <br><br>
 
             <label for="tgl">Tanggal Lahir</label>
             <input type="date" id="tgl" name="tgl" placeholder="Enter your birthday"> <br><br>
@@ -43,7 +79,7 @@
             <input type="text" id="telp" name="telp" placeholder="Enter your phone number"> <br><br>
 
             <label for="lokasi">Lokasi (Domisili)</label> <br>
-            <select name="Kelas" id="Kelas">
+            <select name="lokasi" id="lokasi">
                 <option value="pilih">--- Pilih Lokasi ---</option>
                 <option value="jkt">Jakarta</option>
                 <option value="bdg">Bandung</option>
@@ -53,7 +89,7 @@
                 <option value="mdn">Medan</option>
                 <option value="smrg">Semarang</option>
                 <option value="mksr">Makassar</option>
-                <option value="bp">Balik Papan</option>
+                <option value="bp">Balikpapan</option>
                 <option value="bl">Bandar Lampung</option>
                 <option value="plmbg">Palembang</option>
                 <option value="ponti">Pontianak</option>
