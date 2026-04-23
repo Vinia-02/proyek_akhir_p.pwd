@@ -19,7 +19,7 @@
         <div class="masuk">
                 <img src="assets/logo2.png" alt="logo">
             <h5>Welcome to Green Community Engagement!</h5>
-            <form action="index.php" method="post">
+            <form action="home.php" method="post">
                 <label for="email">Email: </label> <br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
 
