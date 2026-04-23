@@ -18,7 +18,7 @@
         <div class="go">
                 <img src="assets/logo2.png" alt="logo">
             <h5>Welcome to Green Community Engagement!</h5>
-            <form action="login.php" method="post">
+            <form action="login.php" method="POST">
                 <label for="usn">Username: </label> <br>
                 <input type="text" id="usn" name="usn" placeholder="Enter your username" required> <br>
 
