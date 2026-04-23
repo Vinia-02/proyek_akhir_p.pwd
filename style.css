@@ -51,6 +51,7 @@ html, body {
     border-radius: 20px;
     padding: 13px;
 }
+
 /* index */
 .header{
     min-height: 100vh;
@@ -265,6 +266,8 @@ p{
     max-width: 800px;
     justify-content: space-between;
 }
+
+/* join us */
 .loginpage{
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/oke.jpg);
@@ -307,6 +310,8 @@ p{
     border-radius: 15px;
     background-color: rgb(228, 252, 238);
 }
+
+/* donation */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -322,7 +327,6 @@ p{
 .back-button svg {
     stroke: currentColor;
 }
-
 .donatepage{
     width: 100%;
     background-image: url(assets/bgdonate.jpg);
@@ -385,7 +389,7 @@ p{
     width: 200px;
     height: 200px;
 }
-.masuk form {
+.masuk form{
     width: 95%;
     margin: 0 auto; 
     text-align: left;
@@ -431,4 +435,86 @@ p{
     background-color: rgb(32, 212, 107);
     color: white;
     border: 1px solid rgb(245, 248, 245);
+}
+
+/* register */
+.re{
+    background-color: white;
+}
+.left{
+    display: flex;
+    height: 100vh;
+}
+.pic{
+    width: 50%;
+}
+.pic img{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: blur(1px);
+}
+.right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.go{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.938);
+    max-width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    max-height: 600px;
+}
+.go img{
+    width: 200px;
+    height: 200px;
+}
+.go form{
+    width: 95%;
+    margin: 0 auto; 
+    text-align: left;
+}
+.go h5{
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.go label{
+    font-size: 15px;
+    line-height: 8px;
+    margin-bottom: 10px;
+}
+.go input{
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid rgba(83, 78, 78, 0.699);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.go input[type="text"],
+.go input[type="email"],
+.go input[type="password"]{
+    width: 100%;
+}
+.go button{
+    display: block;
+    margin: 15px auto;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(32, 212, 107);
+    color: white;
+    border: 1px solid rgb(245, 248, 245);
+}
+h6{
+    text-align: center;
+    font-size: 14px;
 }
