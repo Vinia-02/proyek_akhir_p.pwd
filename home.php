@@ -63,14 +63,43 @@
     </section>
 
     <section class="misi">
-        <div class="ms">
-        <h1>Our Mission</h1>
-        <p>1. To organize and participate in environmental clean-up activities <br>
-           2. To raise awareness about the importance of protecting nature <br>
-           3. To encourage people to adopt eco-friendly lifestyles <br>
-           4. To build a strong community that cares for and preserves the environment</p>
+        <h1>Our Mission</h1><br>
+        <div class="row">
+        <div class="col-md-3">
+        <img src="assets/1.jpg" class="card-img-top" alt="1">
+        <div class="card">
+            <p>To organize and participate in environmental clean-up activities</p>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/2.jpg" class="card-img-top" alt="2">
+        <div class="card">
+            <p>To raise awareness about the importance of protecting nature</p>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/3.jpg" class="card-img-top" alt="3">
+        <div class="card">
+            <p>To encourage people to adopt eco-friendly lifestyles</p>
+        </div>
+        </div>
+        <div class="col-md-3">
+        <img src="assets/4.jpg" class="card-img-top" alt="4">
+        <div class="card">
+            <p>To build a strong community that cares for and preserves the environment</p>
+        </div>
+        </div>
         </div>
     </section>
     </div>
 </body>
 </html>
+
+<!-- <section class="misi">
+        <h1>Our Mission</h1>
+        <p>To organize and participate in environmental clean-up activities <br>
+           2. To raise awareness about the importance of protecting nature <br>
+           3. To encourage people to adopt eco-friendly lifestyles <br>
+           4. To build a strong community that cares for and preserves the environment</p>
+        </div>
+    </section> -->

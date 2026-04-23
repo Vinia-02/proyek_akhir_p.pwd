@@ -293,10 +293,14 @@ nav img{
     margin-left: 100px;
 }
 .misi{
-    text-align: right;
+    text-align: left;
     padding-top: 100px;
-    margin-right: 200px;
-    justify-content: space-between;
+    margin: 100px auto;
+}
+.misi h1{
+    text-align: center;
+    color: grey;
+    font-weight: 600;
 }
 
 /* join us */
