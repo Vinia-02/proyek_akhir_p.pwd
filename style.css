@@ -357,7 +357,7 @@ nav img{
 }
 .donatepage{
     width: 100%;
-    background-image: url(assets/bgdonate.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/bgdonate.jpg);
     background-size: cover;
 }
 .donate {
@@ -376,6 +376,11 @@ nav img{
     color: #fff;
     font-size: 28px;
     margin: 0;
+}
+/* projects */
+.pp{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/f.jpg);
+    background-size: cover;
 }
 
 .akun{
