@@ -26,27 +26,49 @@
             </div>
         </div>
     </nav>
-    <section class="donate">
+
+     <section class="djt">
+        <div class="dtek"><br><br><br><br>
+            <button class="love">♡⁠ Support Our Mission</button>
+            <h1>Every Nature, <br>
+                Every Future</h1>
+            <p>Your donation helps us clean, protect, and revive the environment. Join us in making a difference today.</p>
+            <h3>"One touch of nature makes the whole world kin.</h3>
+                <p>- William Shakespeare</p>
+        </div>
+
+    <div class="donate">
         <div class="earth">
-            <h1>Make a Donation</h1>
+            <h1>Make a Donation🍀</h1>
             <p>Every contribution, big or small, brings real change to our planet.</p>
             <form action="landing.php" method="post">
-                <label for="name">Full Name:</label> <br>
+                <label for="name">Full Name</label> <br>
                 <div class="icon">
                     <i class="bi bi-person"></i> 
                     <input type="text" id="name" name="name" placeholder="Please enter your name" required> <br>
                 </div>
 
-                <label for="email">Email:</label> <br>
+                <label for="email">Email</label> <br>
                 <div class="icon">
                     <span><i class="bi bi-envelope"></i></span>
                     <input type="email" id="email" name="email" placeholder="Please enter your email" required> <br>
                 </div>
 
-                <button type="submit">Donate Now</button>
+                <label for="tel">Phone Number</label> <br>
+                <div class="icon">
+                    <span><i class="bi bi-telephone"></i></span>
+                    <input type="tel" id="tel" name="tel" placeholder="Please enter your phone number" required> <br>
+                </div>
+
+                <label for="amount">Your Donation</label><br>
+                <input type="text" id="amount" name="amount" placeholder="ex: IDR 5,000" required> <br>
+
+                <button type="submit" class="hehe">Make an Impact Now</button>
+                <div class="okok">
+                    <p><i class="bi bi-shield-lock"></i>Secure payment. Your data is protected.</p>
                 </div>
             </form>
-
+            </div>
         </div>
     </section>
    

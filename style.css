@@ -339,7 +339,6 @@ nav img{
     border-radius: 15px;
     background-color: rgb(228, 252, 238);
 }
-
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -355,31 +354,98 @@ nav img{
 .back-button svg {
     stroke: currentColor;
 }
+/* donation */
 .donatepage{
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/bgdonate.jpg);
+    background-image: url(assets/bgd5.png);
     background-size: cover;
 }
-.donate {
-    background-color: whitesmoke;
-    opacity: 0.7;
-    max-width: 650px;
+.djt{
+    display: flex;
+    min-height: 100vh;
+}
+.donate, .dtek{
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.earth{
+    background-color: white;
+    opacity: 0.9;
+    max-width: 600px;
     margin: 100px auto;
     border-radius: 20px;
     padding: 25px;
     flex-direction: column;
+    margin-right: 20px;
 }
-.card-amount--header {
-    margin-bottom: 24px;
+.love{
+    padding: 10px;
+    color: rgba(33, 73, 37, 0.918);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-weight: 500;
+    margin-left: 50px;
 }
-.card-amount--header .title-card {
-    color: #fff;
-    font-size: 28px;
-    margin: 0;
+.dtek h1, .dtek h3, .dtek p{
+    color: white;
+    font-weight: 600;
+    margin-left: 50px;
+    line-height: 1.5;
 }
+.earth input[type="text"], .earth input[type="email"], .earth input[type="tel"]{
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid rgba(83, 78, 78, 0.699);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.earth label{
+    font-size: 17px;
+    line-height: 30px;
+    justify-content: space-between;
+}
+.earth h1, .earth p{
+    font-weight: 550;
+}
+.hehe{
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgb(23, 83, 48);
+    color: white;
+    margin-left: 155px;
+}
+.okok{
+    text-align: center;
+}
+.okok p{
+    font-weight: 300;
+}
+.icon{
+    position: relative;
+    margin-bottom: 20px;
+}
+.icon i{
+    position: absolute;
+    left: 15px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+.icon input{
+    width: 100%;
+    padding: 23px 12px 10px 45px !important;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
 /* projects */
 .pp{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/f.jpg);
+    background-image: url(assets/bgd2.jpg);
     background-size: cover;
 }
 
