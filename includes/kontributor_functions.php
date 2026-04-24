@@ -31,7 +31,7 @@ function get_kontributor($id_kontributor){
 function update_kontributor($id_kontributor, $nama_kontributor, $tgl_lahir, $email_kontributor, $telp_kontributor, $location) {
     global $koneksi;
     
-    $stmt = $koneksi->prepare("UPDATE kontributor SET nama_kontributor=?, tgl_lahir=?, email_kontributor=?, telp_kontributor=?, location=? WHERE kontributor_id=?");
+    $stmt = $koneksi->prepare("UPDATE kontributor SET nama_kontributor=?, tgl_lahir=?, email_kontributor=?, telp_kontributor=?, location=? WHERE id_kontributor=?");
     $stmt->bind_param("sisesi", $nama_kontributor, $tgl_lahir, $email_kontributor, $telp_kontributor, $location, $id_kontributor);
     return $stmt->execute();
 }

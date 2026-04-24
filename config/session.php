@@ -2,7 +2,6 @@
 session_start();
 require_once __DIR__ . '/connect.php';
 
-// Auto-login jika ada cookie remember me
 if (!isset($_SESSION['nama_pengguna']) && isset($_COOKIE['remember_email']) && isset($_COOKIE['remember_token'])) {
     $email = $_COOKIE['remember_email'];
     $token = $_COOKIE['remember_token'];

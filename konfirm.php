@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once 'config/locations.php';
 
 $kontributor = $_SESSION['kontributor_data'] ?? null;
 if (!$kontributor) {
@@ -30,7 +31,7 @@ unset($_SESSION['success']);
         <p><strong>Tanggal Lahir:</strong> <?php echo htmlspecialchars($kontributor['tgl_lahir']); ?></p>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($kontributor['email']); ?></p>
         <p><strong>No. Telepon:</strong> <?php echo htmlspecialchars($kontributor['telp']); ?></p>
-        <p><strong>Lokasi:</strong> <?php echo htmlspecialchars($kontributor['lokasi']); ?></p>
+        <p><strong>Lokasi:</strong> <?php echo htmlspecialchars(get_location_name($kontributor['lokasi'])); ?></p>
 
         <a href="home.php">Kembali ke Home</a>
     </div>

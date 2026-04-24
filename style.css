@@ -194,7 +194,6 @@ nav img{
     background: rgba(77, 128, 80, 0.8);
 }
 
-/* responsive */
 
 @media (max-width: 800px){
     .navbar{
@@ -231,7 +230,6 @@ nav img{
     }
 }
 
-/* ---about us--- */
 .all{
     background-color: rgb(255, 255, 255);
 }
@@ -293,17 +291,12 @@ nav img{
     margin-left: 100px;
 }
 .misi{
-    text-align: left;
+    text-align: right;
     padding-top: 100px;
-    margin: 100px auto;
-}
-.misi h1{
-    text-align: center;
-    color: grey;
-    font-weight: 600;
+    margin-right: 200px;
+    justify-content: space-between;
 }
 
-/* join us */
 .loginpage{
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/oke.jpg);
@@ -347,7 +340,6 @@ nav img{
     background-color: rgb(228, 252, 238);
 }
 
-/* donation */
 .back-button {
     display: inline-flex;
     align-items: center;
@@ -386,7 +378,6 @@ nav img{
     margin: 0;
 }
 
-/* login session */
 .akun{
     background-color: white;
 }
@@ -473,7 +464,6 @@ nav img{
     border: 1px solid rgb(245, 248, 245);
 }
 
-/* register */
 .re{
     background-color: white;
 }
@@ -562,4 +552,7 @@ h6{
     color: rgb(255, 0, 0);
     text-align: center;
     margin-bottom: 20px;
+}
+.confirmation-page{
+    
 }
