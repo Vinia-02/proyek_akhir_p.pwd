@@ -47,6 +47,12 @@ if (!$kontributor) {
         </div>
     </section>
     <div class="card-container">
+<<<<<<< HEAD
+=======
+        <?php if ($successMessage): ?>
+            <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
+        <?php endif; ?>
+>>>>>>> 574a33893a18d1acd46a36d333f83909defe5dc6
         <div class="card-left">
         <h2>Data Kontributor</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($kontributor['nama']); ?></p>
