@@ -21,7 +21,7 @@ unset($_SESSION['success']);
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="confirmation-page">
+    <div class="konfirm-page">
         <?php if ($successMessage): ?>
             <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
         <?php endif; ?>

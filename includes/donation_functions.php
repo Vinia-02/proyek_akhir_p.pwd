@@ -6,13 +6,14 @@ function create_donasi($nama_donatur, $email_donatur, $telp_donatur, $jumlah_don
     global $koneksi;
 
     $stmt = $koneksi->prepare("INSERT INTO donasi (nama_donatur, email_donatur, telp_donatur, jumlah_donasi) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("sssss", $nama_donatur, $email_donatur, $telp_donatur, $jumlah_donasi);
+    $stmt->bind_param("ssss", $nama_donatur, $email_donatur, $telp_donatur, $jumlah_donasi);
 
-    if ($stmt->execute()){
+    if ($stmt->execute()) {
         $_SESSION['id_donasi'] = $koneksi->insert_id;
-        setcookie("email_donatur", $email_donatur, time() +(365 * 24 * 60 * 60), "/");
+        setcookie("email_donatur", $email_donatur, time() + 31536000, "/");
         return true;
     }
+
     return false;
 }
 

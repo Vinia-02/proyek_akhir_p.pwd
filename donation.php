@@ -1,3 +1,35 @@
+<?php
+require_once 'config/session.php';
+require_once 'includes/donation_functions.php';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $nama_donatur = $_POST['name'] ?? '';
+    $email_donatur = $_POST['email'] ?? '';
+    $telp_donatur = $_POST['tel'] ?? '';
+    $jumlah_donasi = $_POST['amount'] ?? '';
+
+    if ($nama_donatur && $email_donatur && $telp_donatur && $jumlah_donasi){
+        if (create_donasi($nama_donatur, $email_donatur, $telp_donatur, $jumlah_donasi)){
+            $_SESSION['donasi_data'] = [
+                'name' => $nama_donatur,
+                'email' => $email_donatur,
+                'tel' => $telp_donatur,
+                'amount' => $jumlah_donasi
+            ];
+            $_SESSION['success'] = "Terima kasih atas donasi Anda!";
+            header("Location: landing.php");
+            exit();
+        } else {
+            if (empty($_SESSION['error'])) {
+                $_SESSION['error'] = "Gagal menyimpan donasi. Coba lagi.";
+            }
+        }
+    } else {
+        $_SESSION['error'] = "Semua field harus diisi!";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +73,11 @@
         <div class="earth">
             <h1>Make a Donation🍀</h1>
             <p>Every contribution, big or small, brings real change to our planet.</p>
-            <form action="landing.php" method="post">
+            <form action="donation.php" method="post">
+                <?php if (!empty($_SESSION['error'])): ?>
+                    <p class="error-msg"><?php echo $_SESSION['error']; ?></p>
+                    <?php unset($_SESSION['error']); ?>
+                <?php endif; ?>
                 <label for="name">Full Name</label> <br>
                 <div class="icon">
                     <i class="bi bi-person"></i> 
