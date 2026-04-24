@@ -18,7 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 'telp' => $telp_kontributor,
                 'lokasi' => $lokasi
             ];
-            $_SESSION['success'] = "Selamat! Anda telah bergabung dengan komunitas kami!";
             header("Location: konfirm.php");
             exit();
         } else {

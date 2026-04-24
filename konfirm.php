@@ -7,9 +7,6 @@ if (!$kontributor) {
     header('Location: form.php');
     exit();
 }
-
-$successMessage = $_SESSION['success'] ?? '';
-unset($_SESSION['success']);
 ?>
 
 <!DOCTYPE html>
@@ -49,10 +46,6 @@ unset($_SESSION['success']);
             <a href="home.php" class="balik">← Back to Homepage</a>
         </div>
     </section>
-
-        <?php if ($successMessage): ?>
-            <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
-        <?php endif; ?>
     <div class="card-container">
         <div class="card-left">
         <h2>Data Kontributor</h2>

@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 'tel' => $telp_donatur,
                 'amount' => $jumlah_donasi
             ];
-            $_SESSION['success'] = "Terima kasih atas donasi Anda!";
             header("Location: landing.php");
             exit();
         } else {

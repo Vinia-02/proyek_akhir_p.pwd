@@ -12,9 +12,6 @@ $namaDonatur = $donasi['name'] ?? $donasi['nama'] ?? '';
 $emailDonatur = $donasi['email'] ?? '';
 $telpDonatur = $donasi['tel'] ?? $donasi['telp'] ?? '';
 $jumlahDonasi = $donasi['amount'] ?? $donasi['jumlah'] ?? '';
-
-$successMessage = $_SESSION['success'] ?? '';
-unset($_SESSION['success']);
 ?>
 
 <!DOCTYPE html>
@@ -27,9 +24,6 @@ unset($_SESSION['success']);
 </head>
 <body>
     <div class="landing-page">
-        <?php if ($successMessage): ?>
-            <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
-        <?php endif; ?>
 
         <h2>Konfirmasi Data Donasi</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($namaDonatur); ?></p>

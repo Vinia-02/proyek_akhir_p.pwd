@@ -473,13 +473,6 @@ nav img{
     border-radius: 10px;
     outline: none;
 }
-
-
-.pp{
-    background-image: url(assets/bgd2.jpg);
-    background-size: cover;
-}
-
 .akun{
     background-color: white;
 }
@@ -657,12 +650,12 @@ h6{
     margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
 .pp {
     min-height: 100vh;
     background: linear-gradient(rgba(12, 35, 24, 0.72), rgba(12, 35, 24, 0.72)), url(asetProjects/bgprojek.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -755,7 +748,7 @@ h6{
     border-radius: 8px;
     text-align: center;
 }
-=======
+
 /* konfirm page */
 .kfpg{
     background:rgb(63, 97, 60)
@@ -881,4 +874,3 @@ h6{
     object-fit: contain;
     border-radius: 15px;
 }
->>>>>>> aeea40474f8f411dafb318bdfbefbf05913ab4d0
