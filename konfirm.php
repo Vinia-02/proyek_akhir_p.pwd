@@ -49,11 +49,10 @@ unset($_SESSION['success']);
             <a href="home.php" class="balik">← Back to Homepage</a>
         </div>
     </section>
-
+    <div class="card-container">
         <?php if ($successMessage): ?>
             <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
         <?php endif; ?>
-    <div class="card-container">
         <div class="card-left">
         <h2>Data Kontributor</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($kontributor['nama']); ?></p>
