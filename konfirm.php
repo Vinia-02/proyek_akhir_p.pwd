@@ -37,32 +37,23 @@ if (!$kontributor) {
         </div>
         </nav>
 
-    <section class="kfcont">
-        <div class="kftek">
-            <span class="badge">♡⁠ Thank You!</span>
-            <h1>Welcome! <br>
-                You’ve successfully joined our community</h1>
-            <p>Thank you for joining our mission to create a cleaner, healthier environment.</p>
-            <a href="home.php" class="balik">← Back to Homepage</a>
-        </div>
-    </section>
     <div class="card-container">
-<<<<<<< HEAD
-=======
-        <?php if ($successMessage): ?>
-            <div class="success-msg"><?php echo htmlspecialchars($successMessage); ?></div>
-        <?php endif; ?>
->>>>>>> 574a33893a18d1acd46a36d333f83909defe5dc6
-        <div class="card-left">
+
+    <div class="top-text">
+        <span class="badge">♡ Thank You!</span>
+        <h1>Welcome! <br>
+            You’ve successfully joined our community</h1>
+        <p>Thank you for joining our mission to create a cleaner, healthier environment.</p>
+        <a href="home.php" class="balik">← Back to Homepage</a>
+    </div>
+
+    <div class="card-left">
         <h2>Data Kontributor</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($kontributor['nama']); ?></p>
         <p><strong>Tanggal Lahir:</strong> <?php echo htmlspecialchars($kontributor['tgl_lahir']); ?></p>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($kontributor['email']); ?></p>
         <p><strong>No. Telepon:</strong> <?php echo htmlspecialchars($kontributor['telp']); ?></p>
         <p><strong>Lokasi:</strong> <?php echo htmlspecialchars(get_location_name($kontributor['lokasi'])); ?></p>
-    </div>
-    <div class="card-right">
-        <img src="assets/relawan.jpg" alt="Relawan">
     </div>
 </div>
 </body>

@@ -649,6 +649,8 @@ h6{
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* projects */
 .pp {
     min-height: 100vh;
     background: linear-gradient(rgba(12, 35, 24, 0.72), rgba(12, 35, 24, 0.72)), url(asetProjects/bgprojek.png);
@@ -663,20 +665,17 @@ h6{
     padding: 180px 24px 36px;
     color: white;
 }
-
-.projects-hero h1 {
+.projects-hero h1{
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
-.projects-hero p {
+.projects-hero p{
     max-width: 620px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.85);
 }
-
-.projects-grid {
+.projects-grid{
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px 60px;
@@ -684,30 +683,25 @@ h6{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
 }
-
-.project-card {
+.project-card{
     background: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
-
 .project-card img {
     width: 100%;
     height: 210px;
     object-fit: cover;
 }
-
 .project-content {
     padding: 20px;
 }
-
 .project-status {
     display: inline-block;
     margin-bottom: 12px;
@@ -718,27 +712,23 @@ h6{
     font-size: 12px;
     font-weight: 600;
 }
-
 .project-content h3 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     color: rgb(24, 59, 43);
 }
-
 .project-content p {
     font-size: 14px;
     line-height: 1.7;
     color: rgb(85, 85, 85);
 }
-
 .project-location {
     margin-top: 16px;
     font-size: 13px;
     font-weight: 600;
     color: rgb(45, 125, 74);
 }
-
 .empty-project {
     grid-column: 1 / -1;
     background: white;
@@ -749,18 +739,31 @@ h6{
 
 /* konfirm page */
 .kfpg{
-    background:rgb(34, 71, 31)
+    background: url(assets/bgkf.png) center/cover no-repeat;
+    min-height: 100vh;
 }
-.kfcont{
-    height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/bgkf.png') center/cover;
+.card-container{
+    width: 85%;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
     display: flex;
-    align-items: center;
-    padding: 60px;
-    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.kftek{
-    max-width: 600px;
+.top-text{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.top-text h1{
+    font-size: 28px;
+    margin: 10px 0;
+}
+.top-text p{
+    color: #555;
 }
 .badge{
     background: #7bb48e;
@@ -768,18 +771,10 @@ h6{
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 14px;
-    display: inline-block;
-}
-.kftek h1{
-    font-size: 36px;
-    margin: 15px 0;
-    font-weight: 600;
-}
-.kftek p{
-    margin-bottom: 15px;
 }
 .balik{
     display: inline-block;
+    margin-top: 10px;
     border: 1px solid #4CAF50;
     padding: 8px 18px;
     border-radius: 25px;
@@ -791,84 +786,23 @@ h6{
     background: #4CAF50;
     color: white;
 }
-.success-msg{
-    text-align: center;
-    margin-top: 20px;
-    color: green;
-    font-weight: 500;
-}
-.card-container{
-    display: flex;
-    width: 85%;
-    margin: -5px auto 5px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: 0.3s;
-    height: 85%;
-}
-.card-container:hover{
-    transform: translateY(-5px);
-}
 .card-left{
-    width: 50%;
-    padding: 30px;
+    width: 100%;
 }
 .card-left h2{
     color: #2e7d32;
     margin-bottom: 20px;
-    font-weight: 600;
 }
 .card-left p{
-    margin: 12px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #eee;
-    font-size: 14px;
+    margin: 14px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-left: 40px;
     position: relative;
-    padding-left: 45px;
 }
-.card-left strong{
-    color: #555;
-}
-.card-left p::before{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #ffffff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font-size: 14px;
-}
-.card-left p:nth-of-type(1)::before{
-    content: "👤";
-}
-.card-left p:nth-of-type(2)::before{
-    content: "📅";
-}
-.card-left p:nth-of-type(3)::before{
-    content: "📧";
-}
-.card-left p:nth-of-type(4)::before{
-    content: "📞";
-}
-.card-left p:nth-of-type(5)::before{
-    content: "📍";
-}
-.card-right{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card-right img{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    border-radius: 15px;
+
+/* landing */
+.dspg{
+    background: url(assets/f.jpg) center/cover no-repeat;
+    min-height: 100vh;
 }
