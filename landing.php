@@ -23,6 +23,7 @@ $jumlahDonasi = $donasi['amount'] ?? $donasi['jumlah'] ?? '';
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="landing-page">
 
         <h2>Konfirmasi Data Donasi</h2>
