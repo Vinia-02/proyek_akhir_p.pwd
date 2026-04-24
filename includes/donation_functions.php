@@ -10,7 +10,7 @@ function create_donasi($nama_donatur, $email_donatur, $telp_donatur, $jumlah_don
 
     if ($stmt->execute()) {
         $_SESSION['id_donasi'] = $koneksi->insert_id;
-        setcookie("email_donatur", $email_donatur, time() + 31536000, "/");
+        setcookie("email_donatur", $email_donatur, time() +(365 * 24 * 60 * 60), "/");
         return true;
     }
 

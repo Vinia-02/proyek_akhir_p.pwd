@@ -24,39 +24,42 @@ $projects = get_all_projects();
             <li><a href="#about">About Us</a></li>
             <li><a href="projects.php">Projects</a></li>
             <li><a href="donation.php">Donation</a></li>
-            <span class="divider">|</span>
+            <li class="divider">|</li>
             <li><a href="logout.php">Logout</a></li>
           </ul>
       </div>
     </div>
   </nav>
-  <br>
-<div class="card-group">
-  <?php if (!empty($projects)): ?>
-    <?php foreach ($projects as $project): ?>
-      <div class="card">
-        <img src="<?php echo htmlspecialchars($project['img_path']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($project['nama_projek']); ?>">
-        <div class="card-body">
-          <h5 class="card-title"><?php echo htmlspecialchars($project['nama_projek']); ?></h5>
-          <p class="card-text"><?php echo nl2br(htmlspecialchars($project['deskripsi'])); ?></p>
-        </div>
-        <div class="card-footer">
-          <small class="text-body-secondary">
-            Lokasi: <?php echo htmlspecialchars($project['lokasi_projek']); ?>
-            <br>
-            Status: <?php echo htmlspecialchars($project['status']); ?>
-          </small>
-        </div>
+  <section class="projects-hero">
+    <h1>Our Green Projects</h1>
+    <p>Explore community actions that protect, restore, and care for the environment.</p>
+  </section>
+
+  <section class="projects-grid">
+    <?php if (!empty($projects)): ?>
+      <?php foreach ($projects as $project): ?>
+        <article class="project-card">
+          <img src="<?php echo htmlspecialchars($project['img_path']); ?>" alt="<?php echo htmlspecialchars($project['nama_projek']); ?>">
+          <div class="project-content">
+            <span class="project-status"><?php echo htmlspecialchars($project['status']); ?></span>
+            <p><?php echo htmlspecialchars($project['tgl_mulai_projek']); ?>
+            <span class="divider">|</span>
+            <?php echo htmlspecialchars($project['tgl_akhir_projek']); ?></p>
+            <h3><?php echo htmlspecialchars($project['nama_projek']); ?></h3>
+            <p><?php echo htmlspecialchars($project['deskripsi']); ?></p>
+            <div class="project-location">
+              Lokasi: <?php echo htmlspecialchars($project['lokasi_projek']); ?>
+            </div>
+          </div>
+        </article>
+      <?php endforeach; ?>
+    <?php else: ?>
+      <div class="empty-project">
+        <h3>Tidak ada proyek</h3>
+        <p>Belum ada data proyek yang tersedia di database.</p>
       </div>
-    <?php endforeach; ?>
-  <?php else: ?>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Tidak ada proyek</h5>
-        <p class="card-text">Belum ada data proyek yang tersedia di database.</p>
-      </div>
-    </div>
-  <?php endif; ?>
-</div>
+    <?php endif; ?>
+  </section>
+
 </body>
 </html>

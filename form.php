@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <li><a href="#about">About Us</a></li>
                     <li><a href="projects.php">Projects</a></li>
                     <li><a href="donation.php">Donation</a></li>
-                    <span class="divider">|</span>
+                    <li class="divider">|</li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>

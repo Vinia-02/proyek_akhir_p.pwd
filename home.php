@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page | Green Community Engagement</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="header">
@@ -25,7 +25,7 @@
                     <li><a href="#about">About Us</a></li>
                     <li><a href="projects.php">Projects</a></li>
                     <li><a href="donation.php">Donation</a></li>
-                    <span class="divider">|</span>
+                    <li class="divider">|</li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
