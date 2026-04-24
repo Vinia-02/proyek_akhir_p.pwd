@@ -293,10 +293,18 @@ nav img{
 .misi{
     text-align: right;
     padding-top: 100px;
-    margin-right: 200px;
     justify-content: space-between;
 }
+.misi h1{
+    text-align: center;
+    font-weight: 600;
+}
+.misi p{
+    text-align: left;
+    font-weight: 400;
+}
 
+/* join us */
 .loginpage{
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/oke.jpg);
@@ -449,6 +457,7 @@ nav img{
     background-size: cover;
 }
 
+/* loginpage */
 .akun{
     background-color: white;
 }
@@ -535,6 +544,7 @@ nav img{
     border: 1px solid rgb(245, 248, 245);
 }
 
+/* regis page */
 .re{
     background-color: white;
 }

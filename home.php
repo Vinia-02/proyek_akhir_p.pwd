@@ -94,12 +94,3 @@
     </div>
 </body>
 </html>
-
-<!-- <section class="misi">
-        <h1>Our Mission</h1>
-        <p>To organize and participate in environmental clean-up activities <br>
-           2. To raise awareness about the importance of protecting nature <br>
-           3. To encourage people to adopt eco-friendly lifestyles <br>
-           4. To build a strong community that cares for and preserves the environment</p>
-        </div>
-    </section> -->
