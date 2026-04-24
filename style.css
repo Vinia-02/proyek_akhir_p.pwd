@@ -634,3 +634,129 @@ h6{
     text-align: center;
     margin-bottom: 20px;
 }
+
+/* konfirm page */
+.kfpg{
+    background:rgb(63, 97, 60)
+}
+.kfcont{
+    height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/bgkf.png') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+.kftek{
+    max-width: 600px;
+}
+.badge{
+    background: #7bb48e;
+    color: #17442a;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+.kftek h1{
+    font-size: 36px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.kftek p{
+    margin-bottom: 15px;
+}
+.balik{
+    display: inline-block;
+    border: 1px solid #4CAF50;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #4CAF50;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.balik:hover{
+    background: #4CAF50;
+    color: white;
+}
+.success-msg{
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    font-weight: 500;
+}
+.card-container{
+    display: flex;
+    width: 85%;
+    margin: -5px auto 5px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: 0.3s;
+    height: 85%;
+}
+.card-container:hover{
+    transform: translateY(-5px);
+}
+.card-left{
+    width: 50%;
+    padding: 30px;
+}
+.card-left h2{
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.card-left p{
+    margin: 12px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    position: relative;
+    padding-left: 45px;
+}
+.card-left strong{
+    color: #555;
+}
+.card-left p::before{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffffff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.card-left p:nth-of-type(1)::before{
+    content: "👤";
+}
+.card-left p:nth-of-type(2)::before{
+    content: "📅";
+}
+.card-left p:nth-of-type(3)::before{
+    content: "📧";
+}
+.card-left p:nth-of-type(4)::before{
+    content: "📞";
+}
+.card-left p:nth-of-type(5)::before{
+    content: "📍";
+}
+.card-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-right img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    border-radius: 15px;
+}
