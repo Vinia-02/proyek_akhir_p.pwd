@@ -1,3 +1,8 @@
+<?php
+require_once 'includes/project_functions.php';
+$projects = get_all_projects();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,36 +32,31 @@
   </nav>
   <br>
 <div class="card-group">
-  <div class="card">
-    <img src="assets/ketiga.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <?php if (!empty($projects)): ?>
+    <?php foreach ($projects as $project): ?>
+      <div class="card">
+        <img src="<?php echo htmlspecialchars($project['img_path']); ?>" class="card-img-top" alt="<?php echo htmlspecialchars($project['nama_projek']); ?>">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo htmlspecialchars($project['nama_projek']); ?></h5>
+          <p class="card-text"><?php echo nl2br(htmlspecialchars($project['deskripsi'])); ?></p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">
+            Lokasi: <?php echo htmlspecialchars($project['lokasi_projek']); ?>
+            <br>
+            Status: <?php echo htmlspecialchars($project['status']); ?>
+          </small>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  <?php else: ?>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Tidak ada proyek</h5>
+        <p class="card-text">Belum ada data proyek yang tersedia di database.</p>
+      </div>
     </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="assets/gbr.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img src="assets/kedua.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-body-secondary">Last updated 3 mins ago</small>
-    </div>
-  </div>
+  <?php endif; ?>
 </div>
 </body>
 </html>
