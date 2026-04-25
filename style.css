@@ -3,15 +3,6 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
-html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-}
-
 .semua{
     width: 100%;
     background-image: url(assets/bghero.jpg);
@@ -26,12 +17,10 @@ html, body {
     display: flex;
     gap: 20px;
     max-width: 1000px;
-    border-radius: 20px;
     align-items: center;
     margin: 100px auto;
     padding: 20px;
     flex-direction: column;
-    border: 1px solid rgba(55, 199, 67, 0.5);
     margin-bottom: 15px;
 }
 .konten h1{
@@ -54,7 +43,6 @@ html, body {
     padding: 13px;
 }
 
-/* home */
 .header{
     min-height: 100vh;
     width: 100%;
@@ -149,10 +137,8 @@ nav img{
     justify-content: center;
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     background: transparent;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -327,7 +313,6 @@ nav img{
     font-weight: 400;
 }
 
-/* join us */
 .loginpage{
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(assets/oke.jpg);
@@ -385,7 +370,7 @@ nav img{
 .back-button svg {
     stroke: currentColor;
 }
-/* donation */
+
 .donatepage{
     width: 100%;
     background-image: url(assets/bgd5.png);
@@ -473,6 +458,7 @@ nav img{
     border-radius: 10px;
     outline: none;
 }
+
 .akun{
     background-color: white;
 }
@@ -559,7 +545,6 @@ nav img{
     border: 1px solid rgb(245, 248, 245);
 }
 
-/* regis page */
 .re{
     background-color: white;
 }
@@ -649,12 +634,11 @@ h6{
     text-align: center;
     margin-bottom: 20px;
 }
+
 .pp {
-    min-height: 100vh;
     background: linear-gradient(rgba(12, 35, 24, 0.72), rgba(12, 35, 24, 0.72)), url(asetProjects/bgprojek.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 .projects-hero {
@@ -663,19 +647,16 @@ h6{
     padding: 180px 24px 36px;
     color: white;
 }
-
 .projects-hero h1 {
     font-size: 42px;
     font-weight: 700;
     margin-bottom: 10px;
 }
-
 .projects-hero p {
     max-width: 620px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.85);
 }
-
 .projects-grid {
     max-width: 1100px;
     margin: 0 auto;
@@ -684,7 +665,6 @@ h6{
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px;
 }
-
 .project-card {
     background: white;
     border-radius: 8px;
@@ -692,22 +672,18 @@ h6{
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.18);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
-
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }
-
 .project-card img {
     width: 100%;
     height: 210px;
     object-fit: cover;
 }
-
 .project-content {
     padding: 20px;
 }
-
 .project-status {
     display: inline-block;
     margin-bottom: 12px;
@@ -718,157 +694,27 @@ h6{
     font-size: 12px;
     font-weight: 600;
 }
-
 .project-content h3 {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     color: rgb(24, 59, 43);
 }
-
 .project-content p {
     font-size: 14px;
     line-height: 1.7;
     color: rgb(85, 85, 85);
 }
-
 .project-location {
     margin-top: 16px;
     font-size: 13px;
     font-weight: 600;
     color: rgb(45, 125, 74);
 }
-
 .empty-project {
     grid-column: 1 / -1;
     background: white;
     padding: 28px;
     border-radius: 8px;
     text-align: center;
-}
-
-/* konfirm page */
-.kfpg{
-    background:rgb(34, 71, 31)
-}
-.kfcont{
-    height: 350px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/bgkf.png') center/cover;
-    display: flex;
-    align-items: center;
-    padding: 60px;
-    color: white;
-}
-.kftek{
-    max-width: 600px;
-}
-.badge{
-    background: #7bb48e;
-    color: #17442a;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    display: inline-block;
-}
-.kftek h1{
-    font-size: 36px;
-    margin: 15px 0;
-    font-weight: 600;
-}
-.kftek p{
-    margin-bottom: 15px;
-}
-.balik{
-    display: inline-block;
-    border: 1px solid #4CAF50;
-    padding: 8px 18px;
-    border-radius: 25px;
-    color: #4CAF50;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.balik:hover{
-    background: #4CAF50;
-    color: white;
-}
-.success-msg{
-    text-align: center;
-    margin-top: 20px;
-    color: green;
-    font-weight: 500;
-}
-.card-container{
-    display: flex;
-    width: 85%;
-    margin: -5px auto 5px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: 0.3s;
-    height: 85%;
-}
-.card-container:hover{
-    transform: translateY(-5px);
-}
-.card-left{
-    width: 50%;
-    padding: 30px;
-}
-.card-left h2{
-    color: #2e7d32;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-.card-left p{
-    margin: 12px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #eee;
-    font-size: 14px;
-    position: relative;
-    padding-left: 45px;
-}
-.card-left strong{
-    color: #555;
-}
-.card-left p::before{
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #ffffff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    font-size: 14px;
-}
-.card-left p:nth-of-type(1)::before{
-    content: "👤";
-}
-.card-left p:nth-of-type(2)::before{
-    content: "📅";
-}
-.card-left p:nth-of-type(3)::before{
-    content: "📧";
-}
-.card-left p:nth-of-type(4)::before{
-    content: "📞";
-}
-.card-left p:nth-of-type(5)::before{
-    content: "📍";
-}
-.card-right{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.card-right img{
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    border-radius: 15px;
 }
