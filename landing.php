@@ -22,16 +22,29 @@ $jumlahDonasi = $donasi['amount'] ?? $donasi['jumlah'] ?? '';
     <title>Konfirmasi Donasi</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="landing-page">
+<body class="dspg">
 
-        <h2>Konfirmasi Data Donasi</h2>
+<div class="card-container">
+
+    <!-- TOP TEXT -->
+    <div class="top-text">
+        <span class="badge">♡ Thank You!</span>
+        <h1>Donation Successful!</h1>
+        <p>Thank you for your contribution to a cleaner and healthier environment.</p>
+        <a href="home.php" class="balik">← Back to Homepage</a>
+    </div>
+
+    <!-- DATA -->
+    <div class="card-left">
+        <h2>Data Donasi</h2>
+
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($namaDonatur); ?></p>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($emailDonatur); ?></p>
         <p><strong>No. Telepon:</strong> <?php echo htmlspecialchars($telpDonatur); ?></p>
-        <p><strong>Jumlah Donasi:</strong> <?php echo htmlspecialchars($jumlahDonasi); ?></p>
-
-        <a href="home.php">Kembali ke Home</a>
+        <p><strong>Jumlah Donasi:</strong> Rp <?php echo htmlspecialchars($jumlahDonasi); ?></p>
     </div>
+
+</div>
+
 </body>
 </html>

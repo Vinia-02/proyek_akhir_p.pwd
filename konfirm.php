@@ -37,26 +37,27 @@ if (!$kontributor) {
         </div>
         </nav>
 
-    <section class="kfcont">
-        <div class="kftek">
-            <span class="badge">♡⁠ Thank You!</span>
-            <h1>Welcome! <br>
-                You’ve successfully joined our community</h1>
-            <p>Thank you for joining our mission to create a cleaner, healthier environment.</p>
-            <a href="home.php" class="balik">← Back to Homepage</a>
-        </div>
-    </section>
     <div class="card-container">
+<<<<<<< HEAD
         <div class="card-left">
+=======
+
+    <div class="top-text">
+        <span class="badge">♡ Thank You!</span>
+        <h1>Welcome! <br>
+            You’ve successfully joined our community</h1>
+        <p>Thank you for joining our mission to create a cleaner, healthier environment.</p>
+        <a href="home.php" class="balik">← Back to Homepage</a>
+    </div>
+
+    <div class="card-left">
+>>>>>>> 23cc5dfd37dfc5fd8f193696d9f62eeff432561b
         <h2>Data Kontributor</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($kontributor['nama']); ?></p>
         <p><strong>Tanggal Lahir:</strong> <?php echo htmlspecialchars($kontributor['tgl_lahir']); ?></p>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($kontributor['email']); ?></p>
         <p><strong>No. Telepon:</strong> <?php echo htmlspecialchars($kontributor['telp']); ?></p>
         <p><strong>Lokasi:</strong> <?php echo htmlspecialchars(get_location_name($kontributor['lokasi'])); ?></p>
-    </div>
-    <div class="card-right">
-        <img src="assets/relawan.jpg" alt="Relawan">
     </div>
 </div>
 </body>
