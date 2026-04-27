@@ -1,3 +1,12 @@
+<?php
+require_once 'config/session.php';
+
+if (!isset($_SESSION['nama_pengguna'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
