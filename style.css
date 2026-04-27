@@ -720,7 +720,6 @@ h6{
     text-align: center;
 }
 
-/* konfirm page */
 .kfpg{
     background: url(assets/bgkf.png) center/cover no-repeat;
     min-height: 100vh;
@@ -784,7 +783,6 @@ h6{
     position: relative;
 }
 
-/* landing */
 .dspg{
     background: url(assets/f.jpg) center/cover no-repeat;
     min-height: 100vh;
