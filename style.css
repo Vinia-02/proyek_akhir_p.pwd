@@ -720,140 +720,72 @@ h6{
     text-align: center;
 }
 
-.kfpg,
-.dspg {
+/* konfirm page */
+.kfpg{
+    background: url(assets/bgkf.png) center/cover no-repeat;
     min-height: 100vh;
-    background: linear-gradient(rgba(19, 54, 31, 0.82), rgba(19, 54, 31, 0.82)), url(assets/bgkf.png);
-    background-size: cover;
-    background-position: center;
-    color: rgb(31, 41, 55);
 }
-
-.dspg {
-    background: linear-gradient(rgba(19, 54, 31, 0.78), rgba(19, 54, 31, 0.78)), url(assets/bgd5.png);
-    background-size: cover;
-    background-position: center;
+.card-container{
+    width: 85%;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-
-.kfpg .card-container,
-.dspg .card-container {
-    width: min(1080px, calc(100% - 48px));
-    margin: 130px auto 60px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.96);
-    border-radius: 16px;
-    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+.top-text{
+    width: 100%;
+    margin-bottom: 25px;
 }
-
-.kfpg .top-text,
-.dspg .top-text {
-    min-height: 320px;
-    padding: 56px;
-    color: white;
-    background: linear-gradient(rgba(4, 28, 16, 0.62), rgba(4, 28, 16, 0.62)), url(assets/bgkf.png);
-    background-size: cover;
-    background-position: center;
+.top-text h1{
+    font-size: 28px;
+    margin: 10px 0;
 }
-
-.dspg .top-text {
-    background: linear-gradient(rgba(4, 28, 16, 0.58), rgba(4, 28, 16, 0.58)), url(assets/bgd5.png);
-    background-size: cover;
-    background-position: center;
+.top-text p{
+    color: #555;
 }
-
-.kfpg .badge,
-.dspg .badge {
-    display: inline-block;
-    margin-bottom: 18px;
-    padding: 8px 16px;
-    border-radius: 999px;
-    background: rgba(223, 246, 231, 0.94);
-    color: rgb(22, 116, 66);
+.badge{
+    background: #7bb48e;
+    color: #17442a;
+    padding: 6px 14px;
+    border-radius: 20px;
     font-size: 14px;
-    font-weight: 600;
 }
-
-.kfpg .top-text h1,
-.dspg .top-text h1 {
-    max-width: 760px;
-    margin-bottom: 14px;
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 1.15;
-}
-
-.kfpg .top-text p,
-.dspg .top-text p {
-    max-width: 650px;
-    margin-bottom: 24px;
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-.kfpg .balik,
-.dspg .balik {
+.balik{
     display: inline-block;
-    padding: 10px 18px;
-    border: 1px solid rgba(255, 255, 255, 0.75);
-    border-radius: 999px;
-    color: white;
+    margin-top: 10px;
+    border: 1px solid #4CAF50;
+    padding: 8px 18px;
+    border-radius: 25px;
+    color: #4CAF50;
     text-decoration: none;
-    transition: 0.25s ease;
+    transition: 0.3s;
+}
+.balik:hover{
+    background: #4CAF50;
+    color: white;
+}
+.card-left{
+    width: 100%;
+}
+.card-left h2{
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+.card-left p{
+    margin: 14px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-left: 40px;
+    position: relative;
 }
 
-.kfpg .balik:hover,
-.dspg .balik:hover {
-    background: white;
-    color: rgb(22, 116, 66);
-}
-
-.kfpg .card-left,
-.dspg .card-left {
-    padding: 40px 56px 48px;
-}
-
-.kfpg .card-left h2,
-.dspg .card-left h2 {
-    margin-bottom: 24px;
-    color: rgb(24, 59, 43);
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.kfpg .card-left p,
-.dspg .card-left p {
-    margin: 0;
-    padding: 16px 0;
-    border-bottom: 1px solid rgb(230, 238, 233);
-    font-size: 16px;
-}
-
-.kfpg .card-left p:last-child,
-.dspg .card-left p:last-child {
-    border-bottom: 0;
-}
-
-.kfpg .card-left strong,
-.dspg .card-left strong {
-    color: rgb(22, 116, 66);
-}
-
-@media (max-width: 700px) {
-    .kfpg .card-container,
-    .dspg .card-container {
-        width: calc(100% - 28px);
-        margin-top: 110px;
-    }
-
-    .kfpg .top-text,
-    .dspg .top-text,
-    .dspg .card-left,
-    .kfpg .card-left {
-        padding: 30px 24px;
-    }
-
-    .kfpg .top-text h1,
-    .dspg .top-text h1 {
-        font-size: 32px;
-    }
+/* landing */
+.dspg{
+    background: url(assets/f.jpg) center/cover no-repeat;
+    min-height: 100vh;
 }
