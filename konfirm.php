@@ -15,10 +15,10 @@ if (!$kontributor) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konfirmasi Kontributor</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="kfpg">
      <nav class="navbar">
@@ -30,7 +30,7 @@ if (!$kontributor) {
                     <li><a href="#about">About Us</a></li>
                     <li><a href="projects.php">Projects</a></li>
                     <li><a href="donation.php">Donation</a></li>
-                    <span class="divider">|</span>
+                    <li class="divider">|</li>
                     <li><a href="logout.php">Logout</a></li>
                 </ul>
             </div>
@@ -38,9 +38,6 @@ if (!$kontributor) {
         </nav>
 
     <div class="card-container">
-<<<<<<< HEAD
-        <div class="card-left">
-=======
 
     <div class="top-text">
         <span class="badge">♡ Thank You!</span>
@@ -51,7 +48,6 @@ if (!$kontributor) {
     </div>
 
     <div class="card-left">
->>>>>>> 23cc5dfd37dfc5fd8f193696d9f62eeff432561b
         <h2>Data Kontributor</h2>
         <p><strong>Nama Lengkap:</strong> <?php echo htmlspecialchars($kontributor['nama']); ?></p>
         <p><strong>Tanggal Lahir:</strong> <?php echo htmlspecialchars($kontributor['tgl_lahir']); ?></p>

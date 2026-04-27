@@ -137,8 +137,9 @@ nav img{
     justify-content: center;
     height: 80px;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     background: transparent;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
@@ -717,4 +718,142 @@ h6{
     padding: 28px;
     border-radius: 8px;
     text-align: center;
+}
+
+.kfpg,
+.dspg {
+    min-height: 100vh;
+    background: linear-gradient(rgba(19, 54, 31, 0.82), rgba(19, 54, 31, 0.82)), url(assets/bgkf.png);
+    background-size: cover;
+    background-position: center;
+    color: rgb(31, 41, 55);
+}
+
+.dspg {
+    background: linear-gradient(rgba(19, 54, 31, 0.78), rgba(19, 54, 31, 0.78)), url(assets/bgd5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.kfpg .card-container,
+.dspg .card-container {
+    width: min(1080px, calc(100% - 48px));
+    margin: 130px auto 60px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 16px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+.kfpg .top-text,
+.dspg .top-text {
+    min-height: 320px;
+    padding: 56px;
+    color: white;
+    background: linear-gradient(rgba(4, 28, 16, 0.62), rgba(4, 28, 16, 0.62)), url(assets/bgkf.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.dspg .top-text {
+    background: linear-gradient(rgba(4, 28, 16, 0.58), rgba(4, 28, 16, 0.58)), url(assets/bgd5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.kfpg .badge,
+.dspg .badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(223, 246, 231, 0.94);
+    color: rgb(22, 116, 66);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kfpg .top-text h1,
+.dspg .top-text h1 {
+    max-width: 760px;
+    margin-bottom: 14px;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.kfpg .top-text p,
+.dspg .top-text p {
+    max-width: 650px;
+    margin-bottom: 24px;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.kfpg .balik,
+.dspg .balik {
+    display: inline-block;
+    padding: 10px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 999px;
+    color: white;
+    text-decoration: none;
+    transition: 0.25s ease;
+}
+
+.kfpg .balik:hover,
+.dspg .balik:hover {
+    background: white;
+    color: rgb(22, 116, 66);
+}
+
+.kfpg .card-left,
+.dspg .card-left {
+    padding: 40px 56px 48px;
+}
+
+.kfpg .card-left h2,
+.dspg .card-left h2 {
+    margin-bottom: 24px;
+    color: rgb(24, 59, 43);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.kfpg .card-left p,
+.dspg .card-left p {
+    margin: 0;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(230, 238, 233);
+    font-size: 16px;
+}
+
+.kfpg .card-left p:last-child,
+.dspg .card-left p:last-child {
+    border-bottom: 0;
+}
+
+.kfpg .card-left strong,
+.dspg .card-left strong {
+    color: rgb(22, 116, 66);
+}
+
+@media (max-width: 700px) {
+    .kfpg .card-container,
+    .dspg .card-container {
+        width: calc(100% - 28px);
+        margin-top: 110px;
+    }
+
+    .kfpg .top-text,
+    .dspg .top-text,
+    .dspg .card-left,
+    .kfpg .card-left {
+        padding: 30px 24px;
+    }
+
+    .kfpg .top-text h1,
+    .dspg .top-text h1 {
+        font-size: 32px;
+    }
 }
