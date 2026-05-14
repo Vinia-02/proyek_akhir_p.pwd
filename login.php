@@ -6,6 +6,7 @@ $errors = [
 ];
 
 $remembered_email = $_COOKIE['remember_email'] ?? '';
+$alert = $_GET['alert'] ?? '';
 
 session_unset();
 
@@ -35,7 +36,7 @@ function showerror($error){
         <div class="masuk">
                 <img src="assets/logo2.png" alt="logo">
             <h5>Welcome to Green Community Engagement!</h5>
-            <form action="config/session.php" method="post">
+            <form action="config/session.php" method="POST">
                 <?= showerror($errors['login']); ?>
                 <label for="email">Email: </label> <br>
                 <input type="email" id="email" name="email" placeholder="Enter your email" value="<?= htmlspecialchars($remembered_email) ?>" required> <br>

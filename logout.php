@@ -4,6 +4,6 @@ session_unset();
 session_destroy();
 setcookie('remember_email', '', time() - 3600, '/');
 setcookie('remember_token', '', time() - 3600, '/');
-header('Location: index.php');
+header('Location: login.php');
 exit();
 ?>

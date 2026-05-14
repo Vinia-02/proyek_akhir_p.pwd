@@ -9,6 +9,9 @@ session_unset();
 function showerror($error){
     return !empty($error) ? "<p class='error-msg'>$error</p>" : '';
 }
+    if (isset($_GET['alert'])){
+        echo $_GET['alert'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +21,7 @@ function showerror($error){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register | Green Community Engagement</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="re">
@@ -40,7 +43,16 @@ function showerror($error){
                 <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
 
                 <label for="pw">Password: </label> <br>
-                <input type="password" id="pw" name="pw" placeholder="Enter your password" required> <br>
+                <input type="password" name="pw" placeholder="Enter your password" required> <br>
+
+                <label for="pw">Konfirmasi Password: </label> <br>
+                <input type="password" name="confirmpw" placeholder="Enter your password confirmation" required> <br>
+
+                <label for="role">Daftar sebagai: </label> <br>
+                <select id="role" name="role" required>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select> <br>
 
                 <button type="submit" name="register">Register</button>
                 <h6>Already have an account? <a href="login.php">Login</a></h6>
@@ -50,3 +62,4 @@ function showerror($error){
 </div> 
 </body>
 </html>
+

@@ -23,7 +23,7 @@ if (!$kontributor) {
 <body class="kfpg">
      <nav class="navbar">
             <div class="navbar-container">
-            <a href="home.php" class="navdiv"> 
+            <a href="index.php" class="navdiv"> 
             <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
             <div class="nav-links">
                 <ul>
@@ -44,7 +44,7 @@ if (!$kontributor) {
         <h1>Welcome! <br>
             You’ve successfully joined our community</h1>
         <p>Thank you for joining our mission to create a cleaner, healthier environment.</p>
-        <a href="home.php" class="balik">← Back to Homepage</a>
+        <a href="index.php" class="balik">← Back to Homepage</a>
     </div>
 
     <div class="card-left">

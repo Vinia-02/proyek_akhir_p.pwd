@@ -2,6 +2,11 @@
 require_once 'config/session.php';
 require_once 'includes/donation_functions.php';
 
+if (!isset($_SESSION['nama_pengguna'])) {
+    header("Location: login.php");
+    exit;
+}
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $nama_donatur = $_POST['name'] ?? '';
     $email_donatur = $_POST['email'] ?? '';
@@ -19,12 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             header("Location: landing.php");
             exit();
         } else {
-            if (empty($_SESSION['error'])) {
-                $_SESSION['error'] = "Gagal menyimpan donasi. Coba lagi.";
+            if (empty($_SESSION["error"])) {
+                $_SESSION["error"] = "Gagal menyimpan donasi. Coba lagi.";
             }
         }
     } else {
-        $_SESSION['error'] = "Semua field harus diisi!";
+        $_SESSION["error"] = "Semua field harus diisi!";
     }
 }
 ?>
@@ -44,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <body class="donatepage">
    <nav class="navbar">
         <div class="navbar-container">
-            <a href="home.php" class="navdiv"> 
+            <a href="index.php" class="navdiv"> 
             <img style="width: 42px; margin-right: 10px;" src="assets/Logo1.png" alt="Green Community Logo">GREEN COMMUNITY ENGAGEMENT</a>
             <div class="nav-links">
                 <ul>

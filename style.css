@@ -3,46 +3,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.semua{
-    width: 100%;
-    background-image: url(assets/bghero.jpg);
-    background-size: cover;
+html,
+body {
+    overflow-x: hidden;
 }
-.layar img{
-    width: 100px;
-    height: 100px;
-}
-.layar{
-    background-color: rgba(31, 28, 28, 0.658);
-    display: flex;
-    gap: 20px;
-    max-width: 1000px;
-    align-items: center;
-    margin: 100px auto;
-    padding: 20px;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-.konten h1{
-    color: white;
-    text-align: center;
-    line-height: 25px;
-}
-.konten p{
-    color: white;
-    padding: 20px;
-    font-size: 16px;
-    text-align: center;
-    line-height: 20px;
-}
-.kirim a{
-    text-decoration: none;
-    color: white;
-    background-color: rgba(55, 199, 67, 0.5);
-    border-radius: 20px;
-    padding: 13px;
-}
-
 .header{
     min-height: 100vh;
     width: 100%;
@@ -132,6 +96,7 @@ nav img{
     transition: 1s;
 }
 .navbar{
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,12 +111,18 @@ nav img{
     z-index: 999;
 }
 .navbar-container {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     padding: 0 2rem;
     max-width: 1600px;
+}
+.navbar-container *,
+.navbar-container *::before,
+.navbar-container *::after {
+    box-sizing: border-box;
 }
 .navdiv{
     font-size: 20px;
@@ -305,6 +276,10 @@ nav img{
     padding-top: 100px;
     justify-content: space-between;
 }
+.misi .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .misi h1{
     text-align: center;
     font-weight: 600;
@@ -356,22 +331,6 @@ nav img{
     border-radius: 15px;
     background-color: rgb(228, 252, 238);
 }
-.back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.35);
-    padding: 10px 14px;
-    border-radius: 999px;
-    font-size: 14px;
-    margin-right: 18px;
-}
-.back-button svg {
-    stroke: currentColor;
-}
-
 .donatepage{
     width: 100%;
     background-image: url(assets/bgd5.png);
@@ -599,7 +558,8 @@ nav img{
     line-height: 8px;
     margin-bottom: 10px;
 }
-.go input{
+.go input,
+.go select{
     margin-top: 5px;
     border-radius: 5px;
     padding: 7px;
@@ -609,7 +569,8 @@ nav img{
 }
 .go input[type="text"],
 .go input[type="email"],
-.go input[type="password"]{
+.go input[type="password"],
+.go select{
     width: 100%;
 }
 .go button{
@@ -635,6 +596,26 @@ h6{
     text-align: center;
     margin-bottom: 20px;
 }
+.site-footer {
+    padding: 20px 24px;
+    color: rgb(56, 56, 56);
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    margin-top: 40px;
+}
+.site-footer p {
+    margin: 0;
+}
+.auth-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+    color: rgba(24, 19, 42, 0.65);
+}
 
 .pp {
     background: linear-gradient(rgba(12, 35, 24, 0.72), rgba(12, 35, 24, 0.72)), url(asetProjects/bgprojek.png);
@@ -657,6 +638,145 @@ h6{
     max-width: 620px;
     font-size: 16px;
     color: rgba(255, 255, 255, 0.85);
+}
+.admin-project-panel {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 8px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.16);
+}
+.admin-project-panel-message {
+    padding: 0 24px;
+    background: transparent;
+    box-shadow: none;
+}
+.admin-project-heading h2 {
+    margin: 0 0 6px;
+    color: rgb(24, 59, 43);
+    font-size: 24px;
+    font-weight: 700;
+}
+.admin-project-heading p,
+.admin-project-message {
+    margin-bottom: 18px;
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+}
+.admin-project-message {
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: rgb(223, 246, 231);
+    color: rgb(22, 116, 66);
+    font-weight: 600;
+}
+.project-edit-form {
+    display: grid;
+    gap: 12px;
+}
+.project-edit-form label {
+    color: rgb(24, 59, 43);
+    font-size: 13px;
+    font-weight: 600;
+}
+.project-edit-form input,
+.project-edit-form textarea,
+.project-edit-form select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid rgb(204, 220, 210);
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.project-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+.project-form-actions,
+.project-admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.project-form-actions button,
+.project-admin-actions a,
+.project-admin-actions button {
+    border: 0;
+    border-radius: 6px;
+    padding: 9px 14px;
+    background: rgb(45, 125, 74);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.project-form-actions a {
+    color: rgb(45, 125, 74);
+    font-weight: 600;
+    text-decoration: none;
+}
+.edit-project-page {
+    min-height: 100vh;
+    background: linear-gradient(rgba(12, 35, 24, 0.74), rgba(12, 35, 24, 0.74)), url(assets/bghero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(24, 59, 43);
+    font-family: 'Poppins', sans-serif;
+}
+.edit-project-wrapper {
+    width: min(88%, 980px);
+    margin: 0 auto;
+    padding: 128px 0 54px;
+}
+.edit-project-header {
+    margin-bottom: 22px;
+    color: white;
+}
+.edit-project-header h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+    font-weight: 700;
+}
+.edit-project-header p {
+    margin: 0;
+    max-width: 620px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 15px;
+}
+.edit-project-card {
+    padding: 38px 44px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 8px;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.18);
+}
+.edit-project-card .project-edit-form {
+    gap: 16px;
+}
+.edit-project-card .project-edit-form input,
+.edit-project-card .project-edit-form textarea,
+.edit-project-card .project-edit-form select {
+    min-height: 48px;
+    border-color: rgb(204, 220, 210);
+    font-size: 14px;
+}
+.edit-project-card .project-edit-form textarea {
+    min-height: 118px;
+    resize: vertical;
+}
+.edit-project-info {
+    display: none;
+}
+.project-admin-actions {
+    margin-top: 18px;
+}
+.project-admin-actions button {
+    background: rgb(188, 55, 55);
 }
 .projects-grid {
     max-width: 1100px;
@@ -718,6 +838,18 @@ h6{
     padding: 28px;
     border-radius: 8px;
     text-align: center;
+}
+
+@media (max-width: 640px) {
+    .project-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .edit-project-card {
+        padding: 26px 22px;
+    }
 }
 
 .kfpg{
@@ -786,4 +918,8 @@ h6{
 .dspg{
     background: url(assets/f.jpg) center/cover no-repeat;
     min-height: 100vh;
+    padding-top: 1px;
+}
+.dspg .card-container{
+    margin-top: 120px;
 }
