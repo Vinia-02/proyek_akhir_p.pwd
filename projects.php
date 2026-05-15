@@ -8,7 +8,12 @@ if (!isset($_SESSION['nama_pengguna'])) {
 }
 
 $is_admin = ($_SESSION['role'] ?? 'user') === 'admin';
-$message = isset($_GET['updated']) ? 'Proyek berhasil diperbarui.' : '';
+$message = '';
+if (isset($_GET['created'])) {
+    $message = 'Proyek berhasil ditambahkan.';
+} elseif (isset($_GET['updated'])) {
+    $message = 'Proyek berhasil diperbarui.';
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!$is_admin) {
@@ -23,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = delete_projects($id_projek) ? 'Proyek berhasil dihapus.' : 'Proyek gagal dihapus.';
     }
 
-    if ($action === 'create') {
+    if ($action === 'update') {
         $nama_projek = trim($_POST['nama_projek'] ?? '');
         $deskripsi = trim($_POST['deskripsi'] ?? '');
         $lokasi_projek = trim($_POST['lokasi_projek'] ?? '');
@@ -32,10 +37,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $status = trim($_POST['status'] ?? '');
         $img_path = trim($_POST['img_path'] ?? '');
 
-        if ($nama_projek && $deskripsi && $lokasi_projek && $tgl_mulai_projek && $tgl_akhir_projek && $status && $img_path) {
-            $message = create_projects($nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path)
-                ? 'Proyek berhasil ditambahkan.'
-                : 'Proyek gagal ditambahkan.';
+        if ($id_projek && $nama_projek && $deskripsi && $lokasi_projek && $tgl_mulai_projek && $tgl_akhir_projek && $status && $img_path) {
+            $message = update_projects($id_projek, $nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path)
+                ? 'Proyek berhasil diperbarui.'
+                : 'Proyek gagal diperbarui.';
         } else {
             $message = 'Semua field proyek wajib diisi.';
         }
@@ -59,7 +64,7 @@ function e($value) {
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body class="pp">
   <nav class="navbar">
@@ -78,8 +83,13 @@ function e($value) {
     </div>
   </nav>
   <section class="projects-hero">
-    <h1>Our Green Projects</h1>
-    <p>Explore community actions that protect, restore, and care for the environment.</p>
+    <div>
+      <h1>Our Green Projects</h1>
+      <p>Explore community actions that protect, restore, and care for the environment.</p>
+    </div>
+    <div class="btn-tambah">
+    <a href="tambahprojek.php">Tambah Projek +</a>
+    </div>
   </section>
 
   <?php if ($is_admin): ?>

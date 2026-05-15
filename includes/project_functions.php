@@ -18,12 +18,13 @@ function get_project_by_id($id_projek) {
     return $stmt->get_result()->fetch_assoc();
 }
 
+
 // create
-function create_projects($nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path){
+function create_projects($id_projek, $nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path){
     global $koneksi;
 
-    $stmt = $koneksi->prepare("INSERT INTO projects (nama_projek, deskripsi, lokasi_projek, tgl_mulai_projek, tgl_akhir_projek, status, img_path) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path);
+    $stmt = $koneksi->prepare("INSERT INTO projects (id_projek, nama_projek, deskripsi, lokasi_projek, tgl_mulai_projek, tgl_akhir_projek, status, img_path) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssssss", $id_projek, $nama_projek, $deskripsi, $lokasi_projek, $tgl_mulai_projek, $tgl_akhir_projek, $status, $img_path);
     return $stmt->execute();
 }
 
